@@ -1,4 +1,10 @@
+import React from 'react';
+
 export default function Footer() {
+  const handleLinkClick = (to) => {
+    window.location.href = to;
+  };
+
   return (
     <footer className="relative bg-gradient-to-br from-gray-900 via-purple-900 to-black text-white overflow-hidden">
       {/* Background particles */}
@@ -22,17 +28,34 @@ export default function Footer() {
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 py-10">
         <div className="flex flex-col md:flex-row justify-between items-center">
-          
           {/* Logo on the left */}
-          <a href="#home" className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500 hover:opacity-80 transition duration-300">
+          <button
+            onClick={() => handleLinkClick('/')}
+            className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500 hover:opacity-80 transition duration-300"
+          >
             THE LARBI's
-          </a>
+          </button>
 
-          {/* Optional navigation links */}
+          {/* Footer Page Links */}
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#about" className="text-sm text-gray-300 hover:text-yellow-400 transition">Their Journey</a>
-            <a href="#children" className="text-sm text-gray-300 hover:text-yellow-400 transition">Family</a>
-            <a href="#memories" className="text-sm text-gray-300 hover:text-yellow-400 transition">Memories</a>
+            <button
+              onClick={() => handleLinkClick('/their-journey')}
+              className="text-sm text-gray-300 hover:text-yellow-400 transition"
+            >
+              Their Journey
+            </button>
+            <button
+              onClick={() => handleLinkClick('/marriage-love-story')}
+              className="text-sm text-gray-300 hover:text-yellow-400 transition"
+            >
+              Family
+            </button>
+            <button
+              onClick={() => handleLinkClick('/tribute')}
+              className="text-sm text-gray-300 hover:text-yellow-400 transition"
+            >
+              Tributes
+            </button>
           </div>
         </div>
 

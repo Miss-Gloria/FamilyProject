@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+
 
 export default function Hero() {
   const images = [
@@ -96,28 +98,28 @@ export default function Hero() {
           </div>
 
           {/* Enhanced buttons */}
-          <div className="flex justify-center gap-6 flex-wrap">
-            <a
-              href="#about"
-              className="group relative overflow-hidden bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-8 py-4 rounded-full font-bold shadow-2xl hover:shadow-yellow-500/50 transition-all duration-300 transform hover:scale-105 hover:-translate-y-1"
-            >
-              <span className="relative z-10 flex items-center">
-                <span className="mr-2">📖</span>
-                Their Journey
-              </span>
-              <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-orange-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </a>
-            
-            <a
-              href="#children"
-              className="group relative overflow-hidden border-2 border-white text-white px-8 py-4 rounded-full font-bold backdrop-blur-sm hover:bg-white hover:text-black transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 shadow-2xl"
-            >
-              <span className="flex items-center">
-                <span className="mr-2">👨‍👩‍👧‍👦</span>
-                Meet the Family
-              </span>
-            </a>
-          </div>
+          <div className="flex justify-center gap-6 flex-wrap"> 
+  <Link
+    to="/their-journey"
+    className="group relative overflow-hidden bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-8 py-4 rounded-full font-bold shadow-2xl hover:shadow-yellow-500/50 transition-all duration-300 transform hover:scale-105 hover:-translate-y-1"
+  >
+    <span className="relative z-10 flex items-center">
+      <span className="mr-2">📖</span>
+      Their Journey
+    </span>
+    <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-orange-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+  </Link>
+
+  <Link
+    to="/tribute"
+    className="group relative overflow-hidden border-2 border-white text-white px-8 py-4 rounded-full font-bold backdrop-blur-sm hover:bg-white hover:text-black transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 shadow-2xl"
+  >
+    <span className="flex items-center">
+      <span className="mr-2">👨‍👩‍👧‍👦</span>
+      Tribute
+    </span>
+  </Link>
+</div>
 
           {/* Decorative elements */}
           <div className="absolute top-1/4 left-10 w-20 h-20 bg-yellow-400/20 rounded-full blur-xl animate-pulse"></div>
