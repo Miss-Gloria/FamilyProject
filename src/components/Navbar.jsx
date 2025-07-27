@@ -20,7 +20,7 @@ export default function AlternativeNav() {
 
   const rightNavItems = [
     { name: 'Tributes', to: '/tribute' },
-    { name: 'Gallery', to: '#gallery' },
+    { name: 'Gallery', to: '/gallery' },
     { name: 'Legacy', to: '/legacy' }
   ];
 

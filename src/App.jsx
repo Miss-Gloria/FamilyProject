@@ -12,6 +12,7 @@ import TheirJourney from './pages/TheirJourney';
 import MarriageLoveStory from './pages/Marriage';
 import TributeSection from './pages/Tribute';
 import DailyVersePage from './pages/Legacy';
+import GallerySection from './pages/GallerySection';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
   <Route path="/marriage-love-story" element={<MarriageLoveStory />} />
   <Route path="/tribute" element={<TributeSection />} />
   <Route path="/legacy" element={<DailyVersePage />} />
+  <Route path="/gallery" element={<GallerySection/>} />
 </Routes>
 
         

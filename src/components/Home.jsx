@@ -70,10 +70,10 @@ export default function HomeSections() {
                 </svg>
               </div>
               <h3 className="text-2xl font-bold bg-gradient-to-r from-pink-300 to-pink-100 bg-clip-text text-transparent mb-4">
-                Watch Live
+                Watch Live On the COP Akyem Anyinam Page on Facebook
               </h3>
               <p className="text-purple-100 mb-6 leading-relaxed">
-                The event will be streamed live on Facebook. Stay tuned for the link!
+                The event will be streamed live on Facebook.
               </p>
               <button className="bg-gradient-to-r from-pink-500 to-pink-600 text-white px-8 py-4 rounded-2xl font-semibold cursor-not-allowed opacity-60 transition-all duration-300">
                 Coming Soon
@@ -81,29 +81,7 @@ export default function HomeSections() {
             </div>
           </div>
 
-          {/* Download Brochure */}
-          <div className="group bg-gradient-to-br from-white/15 to-white/5 border border-white/20 backdrop-blur-xl p-8 rounded-3xl shadow-2xl hover:shadow-yellow-400/20 transition-all duration-300 hover:scale-105">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-yellow-400 to-amber-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:rotate-12 transition-transform duration-300">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold bg-gradient-to-r from-yellow-300 to-yellow-100 bg-clip-text text-transparent mb-4">
-                Program Brochure[Coming Soon]
-              </h3>
-              <p className="text-purple-100 mb-6 leading-relaxed">
-                Get the full schedule and event details at your fingertips.
-              </p>
-              <a 
-                href="/brochure.pdf" 
-                download 
-                className="inline-block bg-gradient-to-r from-yellow-400 to-amber-500 text-black px-8 py-4 font-bold rounded-2xl shadow-lg hover:shadow-yellow-400/30 transition-all duration-300 hover:scale-105"
-              >
-                Download PDF
-              </a>
-            </div>
-          </div>
+          
 
           {/* Contact Section */}
           <div className="group bg-gradient-to-br from-white/15 to-white/5 border border-white/20 backdrop-blur-xl p-8 rounded-3xl shadow-2xl hover:shadow-indigo-400/20 transition-all duration-300 hover:scale-105">
